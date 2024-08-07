@@ -1,0 +1,62 @@
+/* Reset body margin */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34; /* Dark background for the entire page */
+    color: #ffffff;
+}
+
+/* Vertical navigation bar */
+.ul-verticle {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    width: 25%;
+    background-color: #333; /* Dark background color for the sidebar */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5); /* Adds shadow for better separation */
+}
+
+/* Container for the list items */
+.li-verticle {
+    padding: 0;
+}
+
+/* Styling for links in the sidebar */
+.li-verticle a {
+    display: block;
+    color: #f1f1f1; /* Light color for text */
+    padding: 20px 16px; /* Increased padding for better spacing */
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Active link styling */
+.li-verticle a.active {
+    background-color: #4caf50; /* Green background for active link */
+    color: white;
+}
+
+/* Hover effect for non-active links */
+.li-verticle a:hover:not(.active) {
+    background-color: #575757; /* Darker grey background on hover */
+    color: white;
+}
+
+/* Image styling */
+.li-verticle img {
+    margin-left: 10px;
+    margin-top: 20px; /* Adjusted margin for better spacing */
+    height: 300px;
+    border-radius: 10px; /* Rounded corners for the image */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Image hover effect */
+.li-verticle img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
